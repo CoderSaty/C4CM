@@ -11,6 +11,33 @@ body {
   background-attachment: fixed;
   overflow-x: hidden !important;
 }
+.feature_card{
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+
+}
+.feature_card:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+}
+.feature_story{
+  font-family: 'Poppins', sans-serif;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.story_heading{
+  font-size: 50px;
+}
+.feature-all{
+  background-image:url(https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+  background-size:cover;
+  background-position:center;
+  
+}
+@media screen and (max-width: 660px)
+{
+  .feature-all{
+  height:320px;
+  }
+}
 .share_conflict{
   margin-right: 0;
   margin:0 0 0 0;
@@ -40,17 +67,6 @@ body {
   /*background-color: turquoise;
   opacity:0.80;*/
 }
-.video_wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
-  }
-  iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 78%;
-  }
 h1 {
 margin-top: 0px;
 }
@@ -62,7 +78,7 @@ margin-top: 0px;
 }
 
 .coverimg {
-background-image: url(images/img3.jpg);
+background-image: url(images/img3.jpeg);
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
