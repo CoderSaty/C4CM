@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap');
 body {
   margin: 0px;
   padding: 0px;
@@ -8,6 +10,35 @@ body {
   font-family: 'Roboto', sans-serif;
   background-attachment: fixed;
   overflow-x: hidden !important;
+}
+.share_conflict{
+  margin-right: 0;
+  margin:0 0 0 0;
+  background-image: url(images/share.jpg);
+  width: 100%;
+  height:500px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+}
+.share_quote{
+  /*background-color: thistle;
+  opacity: 0.80;*/
+}
+.quote_content{
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+  color: whitesmoke;
+  
+  /*background-color: tomato;*/
+
+}
+.share_button{
+  /*background-color: turquoise;
+  opacity:0.80;*/
 }
 .video_wrapper {
   position: relative;
