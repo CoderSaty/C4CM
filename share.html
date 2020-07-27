@@ -18,12 +18,12 @@
       crossorigin="anonymous"
     />
 
-    <link href="home.css" rel="stylesheet" />
+    <link href="home.css" rel="stylesheet">
+    <link href="share.css" rel="stylesheet">
   </head>
   <body>
     <!-- navbar-->
-
-    <div class="container fixed-top">
+    <div class="container-fluid">    
       <nav class="navbar stripe navbar-expand-lg navbar-light fixed-top">
         <a class="text-white navbar-brand" href="index.html">C4CM</a>
         <button
@@ -61,6 +61,99 @@
           </div>
         </div>
       </nav>
+      <br><br>
+    <div class="col-12">
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto contentclass">
+        <form action="" method="post">
+        <p class="h1 text-center">Share Your Conflict</p>
+        <fieldset>
+       
+        <label class="" for="first_name">Name</label>
+        <input type="text" name="fname" >
+        
+        <label class="" for="email">Email</label>
+        <input type="email" name="email" >
+        
+        <label class="" for="mobile number">Phone number</label>
+        <input type="text" name="phone number" >
+        
+        <label class="" for="state">State</label>
+        <input type="text" name="state" >
+
+        <label class="" for="city">City</label>
+        <input type="text" name="city" >
+        <br><br>
+        <label class="" for="identity">Would you like to disclose your identity?</label><br>
+        <input type="radio" id="yes" name="identity" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="identity" value="no">
+        <label for="no">No</label><br>
+        <input type="radio" id="other" name="identity" value="other">
+        <label for="other">Other</label>
+        <input type="text" name="other_text" placeholder="If chosen other">
+        <br><br>
+        <label class="" for="conflict type">Type of your conflict</label><br>
+        <input type="radio" id="multiple options" name="conflict_type" value="conflict between multiple options">
+        <label for="conflict between multiple options">Conflict between multiple options</label><br>
+        
+        <input type="radio" id="heart and mind" name="conflict_type" value="conflict between heart and mind">
+        <label for="conflict between heart and mind">Conflict between heart and mind</label><br>
+        
+        <input type="radio" id="family" name="conflict_type" value="conflict with family">
+        <label for="conflict with family">Conflict with family</label><br>
+        
+        <input type="radio" id="workplace" name="conflict_type" value="conflict at workplace">
+        <label for="conflict at workplace">Conflict at workplace</label><br>
+        
+        <input type="radio" id="other relationships" name="conflict_type" value="conflict in other relationships">
+        <label for="conflict in other relationships">Conflict in other relationships</label><br>
+        
+        <input type="radio" id="others" name="conflict_type" value="others">
+        <label for="others">Others</label><br>
+        
+        <br>
+        
+        <label for="language">Language you are choosing to share your conflict</label><br>
+        <select name="language" id="langauage">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Bengali</option>
+          <option>Assamese</option>
+          <option>Bodo</option>
+          <option>Dogri</option>
+          <option>Gujrati</option>
+          <option>Kannada</option>
+          <option>Kashmiri</option>
+          <option>Konkani</option>
+          <option>Maithili</option>
+          <option>Malayalam</option>
+          <option>Manipuri</option>
+          <option>Marathi</option>
+          <option>Nepali</option>
+          <option>Odia</option>
+          <option>Punjabi</option>
+          <option>Sanskrit</option>
+          <option>Santali</option>
+          <option>Sindhi</option>
+          <option>Tamil</option>
+          <option>Telegu</option>
+          <option>Urdu</option>
+        </select>
+        
+        <label for="Conflict">Share your conflict</label><br>
+        <input type="text" name="conflict" id="Conflict">
+      </fieldset>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+            
+    </form>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>
     </div>
     <div class="container" style="height: 91vh;"></div>
     <footer class="blog-footer text-center" id="footer">
