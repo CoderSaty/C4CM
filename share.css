@@ -37,6 +37,12 @@ input:focus {
   border: 1px solid #00468c;
   border-radius: 5px;
 }
+textarea:focus {
+  box-shadow: 0 0 10px #00468c;
+  border: 1px solid #00468c;
+  border-radius: 5px;
+}
+
 .contentclass {
   box-shadow: 0 1px 0 white inset;
 }
