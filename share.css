@@ -47,3 +47,7 @@ textarea:focus {
 .contentclass {
   box-shadow: 0 1px 0 white inset;
 }
+.form-required {
+  color: red;
+  font-size: 1.2rem;
+}

@@ -69,16 +69,24 @@
               <form name="google-sheet" method="post">
                 <p class="h1 text-center">Join Our Initiative</p>
                 <fieldset>
-                  <label class="" for="first_name">Name</label>
+                  <label class="" for="first_name"
+                    >Name <span class="form-required">*</span></label
+                  >
                   <input type="text" name="name" required />
 
-                  <label class="" for="email">Email</label>
+                  <label class="" for="email"
+                    >Email <span class="form-required">*</span></label
+                  >
                   <input type="email" name="email" required />
 
-                  <label class="" for="mobile number">Phone number</label>
+                  <label class="" for="mobile number"
+                    >Phone number <span class="form-required">*</span></label
+                  >
                   <input type="text" name="phone_number" required />
                   <br /><br />
-                  <label class="" for="status">Current Status </label><br />
+                  <label class="" for="status"
+                    >Current Status <span class="form-required">*</span> </label
+                  ><br />
                   <input
                     type="radio"
                     id="student"
@@ -101,20 +109,30 @@
                   />
                   <label for="self-employed">Self Employed</label><br />
                   <br />
-                  <label class="" for="current-state">Current State</label>
+                  <label class="" for="current-state"
+                    >Current State <span class="form-required">*</span></label
+                  >
                   <input type="text" name="current-state" required />
 
-                  <label class="" for="current-city">Current City</label>
+                  <label class="" for="current-city"
+                    >Current City <span class="form-required">*</span></label
+                  >
                   <input type="text" name="current-city" required />
                   <br />
 
-                  <label class="" for="native-state">Native State</label>
+                  <label class="" for="native-state"
+                    >Native State <span class="form-required">*</span></label
+                  >
                   <input type="text" name="native-state" required />
 
-                  <label class="" for="native-city">Native City</label>
+                  <label class="" for="native-city"
+                    >Native City <span class="form-required">*</span></label
+                  >
                   <input type="text" name="native-city" required />
                   <br /><br />
-                  <label class="" for="apply-for">Applying for</label><br />
+                  <label class="" for="apply-for"
+                    >Applying for <span class="form-required">*</span></label
+                  ><br />
                   <input
                     type="radio"
                     id="campus-ambassador"
@@ -160,13 +178,14 @@
                   <br /><br />
 
                   <label class="" for="facebook">Facebook Profile Link:</label>
-                  <input type="url" name="facebook-profile" required />
+                  <input type="url" name="facebook-profile" />
 
                   <label class="" for="linkedin">LinkedIn Profile Link:</label>
-                  <input type="url" name="linkedin-profile" required />
+                  <input type="url" name="linkedin-profile" />
                   <label class="" for="how-know-about"
                     >How did you come to know about The Centre for Conflict
-                    Management? (Kindly mention the name of person)</label
+                    Management? (Kindly mention the name of person)
+                    <span class="form-required">*</span></label
                   >
                   <input
                     type="text"
