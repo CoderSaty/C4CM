@@ -4,7 +4,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #00b29c;
+  background-color: #000;
   height: 100%;
   font-family: "Roboto", sans-serif;
   background-attachment: fixed;
@@ -395,4 +395,23 @@ h1 {
   .main-timeline .title {
     font-size: 18px;
   }
+}
+#footer {
+  background-color: #333;
+  color: #fff;
+}
+#footer p {
+  margin: 0;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+.footer-icons a {
+  font-size: 2rem;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
