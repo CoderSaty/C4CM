@@ -67,7 +67,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-auto contentclass">
-              <form name="google-sheet" method="post">
+              <form name="google-sheet" method="post" id="join_form">
                 <p class="h1 text-center">Join Our Initiative</p>
                 <fieldset>
                   <label class="" for="first_name"
@@ -280,7 +280,7 @@
                     required
                   />
                 </fieldset>
-                <button type="submit" class="btn btn-primary btn-block">
+                <button type="submit" class="btn btn-primary btn-block"  onclick="return confirm('Are you confirm about your details?');">
                   Submit
                 </button>
               </form>
@@ -348,5 +348,5 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
-  </body>
+   </body>
 </html>
