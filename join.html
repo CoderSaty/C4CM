@@ -110,9 +110,14 @@
                   />
                   <label for="self-employed">Self Employed</label><br />
                   <label class="" for="current institute/organization"
-                    >Current Organisation/Institution <span class="form-required">*</span></label
+                    >Current Organisation/Institution
+                    <span class="form-required">*</span></label
                   >
-                  <input type="text" name="current-organisation/institution" required />
+                  <input
+                    type="text"
+                    name="current-organisation/institution"
+                    required
+                  />
 
                   <br />
                   <label class="" for="current-state"
@@ -280,7 +285,11 @@
                     required
                   />
                 </fieldset>
-                <button type="submit" class="btn btn-primary btn-block"  onclick="return confirm('Are you confirm about your details?');">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  onclick="return confirm('Confirm your details?');"
+                >
                   Submit
                 </button>
               </form>
@@ -348,5 +357,5 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
-   </body>
+  </body>
 </html>
