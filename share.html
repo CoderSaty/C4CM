@@ -145,9 +145,21 @@
                     >Would you like to disclose your identity?
                     <span class="form-required">*</span></label
                   ><br />
-                  <input type="radio" id="yes" name="identity" value="yes" />
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="identity"
+                    value="yes"
+                    required
+                  />
                   <label for="yes">Yes</label><br />
-                  <input type="radio" id="no" name="identity" value="no" />
+                  <input
+                    type="radio"
+                    id="no"
+                    name="identity"
+                    value="no"
+                    required
+                  />
                   <label for="no">No</label><br />
                   <br />
                   <label class="" for="conflict type"
@@ -262,11 +274,8 @@
                     required
                   ></textarea>
                 </fieldset>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-block"
-                  onclick="return confirm('Confirm your details');"
-                >
+                <button type="submit" class="btn btn-primary btn-block">
+                  <!-- onclick="return confirm('Confirm your details');" -->
                   Submit
                 </button>
               </form>
@@ -324,13 +333,14 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbyZbdSOtYYdzFGMmQXBNprnpAolhLF-Wf4gTmGrp2XUjHyKCHg/exec";
       const form = document.forms["google-sheet"];
-
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) =>
-            alert("Thanks for Contacting us..! We Will Contact You Soon...")
-          )
+          .then((response) => {
+            var r = confirm("Confirm your details!");
+            if (r == true)
+              alert("Thanks for Contacting us..! We Will Contact You Soon...");
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
