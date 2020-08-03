@@ -57,6 +57,9 @@
               href="index.html#ourteamelement"
               >Our Team</a
             >
+            <a class="nav-item nav-link text-white" href="gallery.html"
+              >Gallery</a
+            >
             <a
               class="nav-item nav-link text-white"
               href="index.html#contactelement"
@@ -71,7 +74,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-auto contentclass">
-              <form name="google-sheet" method="post" id="join_form" >
+              <form name="google-sheet" method="post" id="join_form">
                 <p class="h1 text-center">Join Our Initiative</p>
                 <fieldset>
                   <label class="" for="first_name"
@@ -289,12 +292,8 @@
                     required
                   />
                 </fieldset>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-block"
-                 "
-                >
-                <!-- onclick="return confirm('Confirm your details.'); -->
+                <button type="submit" class="btn btn-primary btn-block">
+                  <!-- onclick="return confirm('Confirm your details.'); -->
                   Submit
                 </button>
               </form>
@@ -356,10 +355,10 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) =>{
-          var r = confirm("Confirm your details!");
+          .then((response) => {
+            var r = confirm("Confirm your details!");
             if (r == true)
-            alert("Thanks for Contacting us..! We Will Contact You Soon...");
+              alert("Thanks for Contacting us..! We Will Contact You Soon...");
           })
           .catch((error) => console.error("Error!", error.message));
       });
